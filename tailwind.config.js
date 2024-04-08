@@ -3,11 +3,8 @@ module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
     extend: {
-      fontFamily: {
-        'nanumpen': 'NanumPem-Regular',
-        'gleglo': 'Glegoo',
-        'gleglo-bold': 'Glegoo-Bold',
-        'gilroy-extrabold': 'Gilroy-ExtraBold',
+      borderRadius: {
+        '4xl': '2rem',
       },
       colors: {
         'skyblue': {
@@ -21,7 +18,13 @@ module.exports = {
           500: '#39D9AF',
           600: '#08CF9B',
         }
-      }
+      },
+      fontFamily: {
+        'nanumpen': 'NanumPem-Regular',
+        'gleglo': 'Glegoo',
+        'gleglo-bold': 'Glegoo-Bold',
+        'gilroy-extrabold': 'Gilroy-ExtraBold',
+      },
     },
   },
   plugins: [],
