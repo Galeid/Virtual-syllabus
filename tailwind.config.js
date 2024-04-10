@@ -3,6 +3,12 @@ module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
     extend: {
+      backgroundImage: {
+        'crumpled-paper': 'url(\'/assets/crumpled-paper.png\')',
+      },
+      backgroundSize: {
+        '100%': '100% 100%',
+      },
       borderRadius: {
         '4xl': '2rem',
       },
