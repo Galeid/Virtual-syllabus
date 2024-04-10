@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
+        'clip-paper': 'url(\'/assets/clip-paper.png\')',
         'crumpled-paper': 'url(\'/assets/crumpled-paper.png\')',
       },
       backgroundSize: {
@@ -30,6 +31,17 @@ module.exports = {
         'gleglo': 'Glegoo',
         'gleglo-bold': 'Glegoo-Bold',
         'gilroy-extrabold': 'Gilroy-ExtraBold',
+      },
+      fontSize: {
+        '8.5xl': ['7rem', {
+          lineHeight: '1',
+        }],
+        '8.25xl': ['6.5rem', {
+          lineHeight: '1',
+        }],
+        '4.5xl': ['2.625rem', {
+          lineHeight: '1',
+        }],
       },
     },
   },
