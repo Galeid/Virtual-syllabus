@@ -6,6 +6,7 @@ module.exports = {
       backgroundImage: {
         'clip-paper': 'url(\'/assets/clip-paper.png\')',
         'crumpled-paper': 'url(\'/assets/crumpled-paper.png\')',
+        'piece-paper': 'url(\'/assets/piece-paper.png\')',
       },
       backgroundSize: {
         '100%': '100% 100%',
