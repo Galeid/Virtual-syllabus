@@ -1,4 +1,4 @@
-<section class="bg-crumpled-paper bg-white bg-cover -mt-24">
+<section class="bg-crumpled-paper bg-white bg-cover -my-24">
   <div class="max-w-6xl mx-auto flex">
     <div class="mt-32 mb-24 w-full">
       <div class="max-h-[600px]">
@@ -29,7 +29,10 @@
   </div>
 </section>
 
-<section class="bg-skyblue-600 flex items-center">
+<app-divider skew="right" [wave]="true" topBackground="bg-crumpled-paper bg-white bg-cover"
+  bottomBackground="bg-skyblue-600" />
+
+<section class="-my-12 bg-skyblue-600 flex items-center">
   <div class="max-w-6xl mx-auto flex">
     <div
       class="bg-clip-paper bg-100% my-24 max-w-4xl max-h-[515px] flex flex-row-reverse items-center relative"
@@ -68,6 +71,8 @@
   </div>
 </section>
 
+<app-divider skew="right" [wave]="true" topBackground="bg-skyblue-600" bottomBackground="bg-skyblue-100" />
+
 <section class="-my-12 bg-skyblue-100">
   <div class="max-w-6xl mx-auto py-28 flex flex-col text-center leading-none">
     <div class="font-gleglo-bold text-3xl xl:text-4.5xl mb-4">
@@ -91,6 +96,8 @@
     </div>
   </div>
 </section>
+
+<app-divider skew="left" topBackground="bg-skyblue-100" bottomBackground="bg-jade-600" />
 
 <section class="-my-12 bg-jade-600">
   <div class="max-w-6xl mx-auto flex">
@@ -123,6 +130,8 @@
     </div>
   </div>
 </section>
+
+<app-divider skew="left" topBackground="bg-jade-600" bottomBackground="bg-white" />
 
 <section class="-mt-8 bg-white">
   <div class="max-w-6xl mx-auto flex flex-col">

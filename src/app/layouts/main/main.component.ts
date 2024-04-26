@@ -1,7 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NgIconComponent, provideIcons } from '@ng-icons/core';
-import { heroUser, heroComputerDesktop, heroIdentification } from '@ng-icons/heroicons/outline';
+import {
+  ionLogoGithub,
+  ionLogIn,
+  ionDesktopOutline,
+  ionReaderOutline,
+} from '@ng-icons/ionicons';
 
 @Component({
   selector: 'app-main',
@@ -9,7 +14,14 @@ import { heroUser, heroComputerDesktop, heroIdentification } from '@ng-icons/her
   imports: [RouterOutlet, NgIconComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css',
-  viewProviders:[provideIcons({ heroUser, heroComputerDesktop, heroIdentification })]
+  viewProviders: [
+    provideIcons({
+      ionLogIn,
+      ionDesktopOutline,
+      ionReaderOutline,
+      ionLogoGithub,
+    }),
+  ],
 })
 export class MainLayoutComponent {
   isLogged: boolean = false;

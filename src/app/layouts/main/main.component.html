@@ -5,20 +5,20 @@
     <button
       class="flex items-center gap-2 rounded-4xl px-4 py-2.5 bg-skyblue-600 hover:bg-skyblue-500 font-medium"
     >
-      <ng-icon name="heroComputerDesktop" size="20"></ng-icon>
+      <ng-icon name="ionDesktopOutline" size="20"></ng-icon>
       Dashboard
     </button>
     } @else {
     <button
       class="flex items-center gap-2 rounded-4xl px-4 py-2 bg-jade-600 hover:bg-jade-500 font-medium"
     >
-      <ng-icon name="heroUser" size="20"></ng-icon>
+      <ng-icon name="ionLogIn" size="20"></ng-icon>
       Log In
     </button>
     <button
       class="flex items-center gap-2 rounded-4xl px-4 py-2 bg-skyblue-600 hover:bg-skyblue-500 font-medium"
     >
-      <ng-icon name="heroIdentification" size="20"></ng-icon>
+      <ng-icon name="ionReaderOutline" size="20"></ng-icon>
       Register
     </button>
     }
@@ -34,8 +34,10 @@
       class="font-bold text-base"
       [href]="'https://github.com/Galeid'"
       target="_blank"
-      >&#64;<span class="underline">Galeid</span></a
-    ></label
+    >
+      <ng-icon name="ionLogoGithub" size="20" class="align-sub mr-1"></ng-icon>
+      <span class="hover:underline">Galeid</span>
+    </a></label
   >
   <img src="assets/full-logo-virtual.png" width="140" />
 </footer>
