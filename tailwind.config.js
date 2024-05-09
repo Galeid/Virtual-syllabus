@@ -7,6 +7,8 @@ module.exports = {
         'clip-paper': 'url(\'/assets/clip-paper.png\')',
         'crumpled-paper': 'url(\'/assets/crumpled-paper.png\')',
         'piece-paper': 'url(\'/assets/piece-paper.png\')',
+        'paper-sheet': 'url(\'/assets/paper-sheet.png\')',
+        'photo': 'url(\'/assets/photo.png\')',
       },
       backgroundSize: {
         '100%': '100% 100%',
@@ -32,6 +34,7 @@ module.exports = {
         'gleglo': 'Glegoo',
         'gleglo-bold': 'Glegoo-Bold',
         'gilroy-extrabold': 'Gilroy-ExtraBold',
+        'monserrat': 'Monserrat-Medium',
       },
       fontSize: {
         '8.5xl': ['7rem', {

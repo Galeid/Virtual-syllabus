@@ -1,0 +1,49 @@
+<section class="bg-skyblue-100 -mt-24">
+  <div class="max-w-6xl mx-auto flex py-28">
+    <div class="w-1/4 flex flex-col">
+      <div
+        class="text-white bg-jade-600 mx-auto font-nanumpen text-4xl px-6 rounded-t-lg"
+      >
+        courses
+      </div>
+
+      <div
+        class="rounded-lg py-6 px-6 font-monserrat text-lg text-zinc-700 bg-white max-h-96 flex flex-col gap-3"
+      >
+        @for (course of courses; track $index) {
+        <div
+          [class]="
+            'hover:opacity-80 rounded-lg py-3 px-5 flex items-center gap-5 cursor-pointer' +
+            (isActiveCourse(course) ? ' bg-skyblue-500' : '')
+          "
+          (click)="setActiveCourse(course)"
+        >
+          <ng-icon name="ionLibrary" size="30" /> {{ course.name }}
+        </div>
+        }
+      </div>
+    </div>
+    <div class="w-3/4">
+      <div
+        class="bg-paper-sheet bg-white bg-100% relative max-w-3xl h-[32rem] ml-32 py-16 pl-20 flex flex-col items-center"
+      >
+        <div
+          class="bg-photo bg-contain bg-no-repeat bg-center w-1/3 absolute top-0 left-[-15%] h-full"
+        ></div>
+        <div class="w-4/5 flex-1 px-2 overflow-auto scroll-bg-skyblue">
+            @if (activeCourse) {
+            <app-accordion>
+              @for (section of activeCourse.sections; track $index) {
+              <app-accordion-item [title]="section.name">
+                @for (topic of section.topics; track $index) {
+                <div class="ml-6">- {{ topic.name }}</div>
+                }
+              </app-accordion-item>
+              }
+            </app-accordion>
+            }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

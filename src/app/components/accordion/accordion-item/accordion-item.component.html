@@ -1,0 +1,19 @@
+<div class="bg-skyblue-600">
+  <div
+    class="p-3.5 text-base flex justify-between cursor-pointer items-center hover:bg-skyblue-500 transition duration-300 ease-in-out"
+    (click)="toggleBody()"
+  >
+    <div>{{ title }}</div>
+    <ng-icon
+      [@rotatedState]="!showBody ? 'default' : 'rotated'"
+      name="ionCaretUp"
+      size="25"
+    />
+  </div>
+
+  <div [@smoothCollapse]="!showBody ? 'initial' : 'final'">
+    <div class="px-3.5 py-2.5 text-sm font-light">
+      <ng-content />
+    </div>
+  </div>
+</div>

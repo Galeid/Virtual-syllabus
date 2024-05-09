@@ -1,24 +1,24 @@
-<header class="relative flex justify-between items-center px-16 h-24">
+<header class="flex justify-between items-center px-16 h-24">
   <img src="assets/full-logo-virtual.png" alt="logo-virtual" width="140" />
   <div class="flex items-center gap-2 text-white text-sm">
     @if (isLogged) {
     <button
-      class="flex items-center gap-2 rounded-4xl px-4 py-2.5 bg-skyblue-600 hover:bg-skyblue-500 font-medium"
+      class="flex items-center gap-2 rounded-4xl px-4 py-2.5 bg-skyblue-600 font-medium opacity-100 hover:opacity-80 transition-opacity duration-300 ease-in-out"
     >
-      <ng-icon name="ionDesktopOutline" size="20"></ng-icon>
+      <ng-icon name="ionDesktopOutline" size="20" />
       Dashboard
     </button>
     } @else {
     <button
-      class="flex items-center gap-2 rounded-4xl px-4 py-2 bg-jade-600 hover:bg-jade-500 font-medium"
+      class="flex items-center gap-2 rounded-4xl px-4 py-2 bg-jade-600 font-medium opacity-100 hover:opacity-80 transition-opacity duration-300 ease-in-out"
     >
-      <ng-icon name="ionLogIn" size="20"></ng-icon>
+      <ng-icon name="ionLogIn" size="20" />
       Log In
     </button>
     <button
-      class="flex items-center gap-2 rounded-4xl px-4 py-2 bg-skyblue-600 hover:bg-skyblue-500 font-medium"
+      class="flex items-center gap-2 rounded-4xl px-4 py-2 bg-skyblue-600 font-medium opacity-100 hover:opacity-80 transition-opacity duration-300 ease-in-out"
     >
-      <ng-icon name="ionReaderOutline" size="20"></ng-icon>
+      <ng-icon name="ionReaderOutline" size="20" />
       Register
     </button>
     }
@@ -28,16 +28,15 @@
 <router-outlet />
 
 <footer class="flex justify-center items-center gap-6 h-24 bg-white text-sm">
-  <label
-    >Developed by
+  <label>
+    Developed by
     <a
       class="font-bold text-base"
       [href]="'https://github.com/Galeid'"
       target="_blank"
     >
-      <ng-icon name="ionLogoGithub" size="20" class="align-sub mr-1"></ng-icon>
-      <span class="hover:underline">Galeid</span>
-    </a></label
-  >
+      <ng-icon name="ionLogoGithub" size="20" class="align-sub mr-1" />
+    </a>
+  </label>
   <img src="assets/full-logo-virtual.png" width="140" />
 </footer>
