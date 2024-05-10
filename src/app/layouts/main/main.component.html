@@ -1,5 +1,11 @@
-<header class="flex justify-between items-center px-16 h-24">
-  <img src="assets/full-logo-virtual.png" alt="logo-virtual" width="140" />
+<header class="flex justify-between items-center px-16 h-24" id="header">
+  <img
+    src="assets/full-logo-virtual.png"
+    alt="logo-virtual"
+    width="140"
+    class="cursor-pointer"
+    (click)="router.navigate(['/'])"
+  />
   <div class="flex items-center gap-2 text-white text-sm">
     @if (isLogged) {
     <button
@@ -27,7 +33,7 @@
 
 <router-outlet />
 
-<footer class="flex justify-center items-center gap-6 h-24 bg-white text-sm">
+<footer class="flex justify-center items-center gap-6 h-24 text-sm">
   <label>
     Developed by
     <a

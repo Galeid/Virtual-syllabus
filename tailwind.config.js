@@ -19,6 +19,7 @@ module.exports = {
       colors: {
         'skyblue': {
           100: '#DCF3F9',
+          200: '#AAE4F2',
           300: '#77D5EA',
           400: '#68d2f3',
           500: '#36c3ef',

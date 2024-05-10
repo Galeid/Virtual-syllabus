@@ -19,7 +19,7 @@
               </div>
             </div>
             <img
-              src="assets/carousel-img-1.png"
+              src="assets/main-1.png"
               class="absolute top-1/2 right-0 -translate-y-1/2 z-10 h-full"
             />
           </div>
@@ -67,6 +67,7 @@
         </div>
         <div
           class="font-nanumpen text-white bg-skyblue-600 inline-block text-5xl px-4 md:px-16 cursor-pointer opacity-100 hover:opacity-80 transition-opacity duration-300 ease-in-out rounded-lg py-1"
+          (click)="router.navigate(['/preview'])"
         >
           See Courses
         </div>
@@ -150,7 +151,7 @@
   bottomBackground="bg-white"
 />
 
-<section class="-mt-8 bg-white">
+<section class="-mt-8 bg-white pb-24 -mb-24">
   <div class="max-w-6xl mx-auto flex flex-col">
     <div
       class="mt-10 mb-24 w-[900px] h-[500px] mx-auto flex flex-col-reverse md:flex-row-reverse items-center relative"

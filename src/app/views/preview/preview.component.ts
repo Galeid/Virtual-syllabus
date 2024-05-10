@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import { ionLibrary } from '@ng-icons/ionicons';
+
 import { AccordionModule } from '../../components/accordion/accordion.module';
+import { DividerComponent } from '../../components/divider/divider.component';
 
 interface ICourse {
   name: string;
-  sections: { name: string, topics: {name:string}[] }[];
+  sections: { name: string; topics: { name: string }[] }[];
 }
 
 const coursesData: ICourse[] = [
@@ -51,7 +53,6 @@ const coursesData: ICourse[] = [
           { name: 'Planes' },
           { name: 'Angles' },
           { name: 'Congruence' },
-
         ],
       },
       {
@@ -95,7 +96,7 @@ const coursesData: ICourse[] = [
 @Component({
   selector: 'app-preview',
   standalone: true,
-  imports: [NgIconComponent, AccordionModule],
+  imports: [NgIconComponent, AccordionModule, DividerComponent],
   templateUrl: './preview.component.html',
   styleUrl: './preview.component.css',
   viewProviders: [

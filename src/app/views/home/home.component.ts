@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
 import { DividerComponent } from '../../components/divider/divider.component';
 
 @Component({
@@ -8,4 +10,6 @@ import { DividerComponent } from '../../components/divider/divider.component';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
-export class HomeComponent {}
+export class HomeComponent {
+  constructor(public router: Router) {}
+}

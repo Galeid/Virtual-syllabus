@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import {
   ionLogoGithub,
@@ -25,4 +25,6 @@ import {
 })
 export class MainLayoutComponent {
   isLogged: boolean = false;
+
+  constructor(public router: Router) {}
 }
