@@ -10,6 +10,7 @@ module.exports = {
         'paper-sheet': 'url(\'/assets/paper-sheet.png\')',
         'photo': 'url(\'/assets/photo.png\')',
         'grid-paper': 'url(\'/assets/square.png\')',
+        'note-paper': 'url(\'/assets/note-paper.png\')',
       },
       backgroundSize: {
         '100%': '100% 100%',

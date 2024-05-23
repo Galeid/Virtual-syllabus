@@ -6,6 +6,17 @@
     class="cursor-pointer"
     (click)="router.navigate(['/'])"
   />
+  @if (router.url === '/register'){<label>
+    Developed by
+    <a
+      class="font-bold text-base"
+      [href]="'https://github.com/Galeid'"
+      target="_blank"
+    >
+      <ng-icon name="ionLogoGithub" size="20" class="align-sub mr-1" />
+      <span class="hover:underline">Galeid</span>
+    </a>
+  </label>}
   <div class="flex items-center gap-2 text-white text-sm">
     @if (isLogged) {
     <button
@@ -33,7 +44,7 @@
 </header>
 
 <router-outlet />
-
+@if (router.url != '/register'){
 <footer class="relative flex justify-center items-center gap-6 h-24 text-sm z-40">
   <label>
     Developed by
@@ -48,3 +59,4 @@
   </label>
   <img src="assets/full-logo-virtual.png" width="140" />
 </footer>
+}
