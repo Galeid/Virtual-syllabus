@@ -1,4 +1,4 @@
-<header class="flex justify-between items-center px-16 h-24" id="header">
+<header class="relative flex justify-between items-center px-16 h-24 z-40" id="header">
   <img
     src="assets/full-logo-virtual.png"
     alt="logo-virtual"
@@ -23,6 +23,7 @@
     </button>
     <button
       class="flex items-center gap-2 rounded-4xl px-4 py-2 bg-skyblue-600 font-medium opacity-100 hover:opacity-80 transition-opacity duration-300 ease-in-out"
+      (click)="router.navigate(['/register'])"
     >
       <ng-icon name="ionReaderOutline" size="20" />
       Register
@@ -33,7 +34,7 @@
 
 <router-outlet />
 
-<footer class="flex justify-center items-center gap-6 h-24 text-sm">
+<footer class="relative flex justify-center items-center gap-6 h-24 text-sm z-40">
   <label>
     Developed by
     <a
@@ -42,6 +43,7 @@
       target="_blank"
     >
       <ng-icon name="ionLogoGithub" size="20" class="align-sub mr-1" />
+      <span class="hover:underline">Galeid</span>
     </a>
   </label>
   <img src="assets/full-logo-virtual.png" width="140" />
