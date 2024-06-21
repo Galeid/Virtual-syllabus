@@ -11,6 +11,7 @@ module.exports = {
         'photo': 'url(\'/assets/photo.png\')',
         'grid-paper': 'url(\'/assets/square.png\')',
         'note-paper': 'url(\'/assets/note-paper.png\')',
+        'black-clip': 'url(\'/assets/black-clip.png\')',
       },
       backgroundSize: {
         '100%': '100% 100%',
