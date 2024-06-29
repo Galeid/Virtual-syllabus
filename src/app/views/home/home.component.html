@@ -1,29 +1,25 @@
 <section class="bg-crumpled-paper bg-white bg-cover -my-24">
   <div class="max-w-6xl mx-auto flex">
-    <div class="mt-28 mb-36 w-full">
-      <div class="max-h-[600px]">
-        <div class="h-[600px] w-full">
-          <div class="relative flex flex-col md:flex-row items-center h-full">
-            <div
-              class="w-full md:w-1/2 font-gleglo-bold text-5xl/tight xl:text-6xl/tight text-center"
-            >
-              <div>Reinforces</div>
-              <div>the learned</div>
-              <div class="flex justify-center">
-                <div>in</div>
-                <div class="px-4 -mt-6">
-                  <span class="font-nanumpen text-skyblue-600 text-9xl">
-                    class
-                  </span>
-                </div>
-              </div>
+    <div class="mt-28 mb-36 w-full max-h-[600px] h-[600px]">
+      <div class="relative flex flex-col md:flex-row items-center h-full">
+        <div
+          class="w-full md:w-1/2 font-gleglo-bold text-5xl/tight xl:text-6xl/tight text-center"
+        >
+          <div>Reinforces</div>
+          <div>the learned</div>
+          <div class="flex justify-center">
+            <div>in</div>
+            <div class="px-4 -mt-6">
+              <span class="font-nanumpen text-skyblue-600 text-9xl">
+                class
+              </span>
             </div>
-            <img
-              src="assets/main-1.png"
-              class="absolute top-1/2 right-0 -translate-y-1/2 z-10 h-full"
-            />
           </div>
         </div>
+        <img
+          src="assets/main-1.png"
+          class="absolute top-1/2 right-0 -translate-y-1/2 z-10 h-full"
+        />
       </div>
     </div>
   </div>
@@ -154,11 +150,11 @@
 <section class="-mt-8 bg-white pb-24 -mb-24">
   <div class="max-w-6xl mx-auto flex flex-col">
     <div
-      class="mt-10 mb-24 w-[900px] h-[500px] mx-auto flex flex-col-reverse md:flex-row-reverse items-center relative"
+      class="mt-10 mb-24 w-full h-[500px] mx-auto flex flex-col-reverse md:flex-row-reverse items-center relative"
     >
       <img
         src="assets/hello-guy.png"
-        class="absolute top-[58%] -left-[5%] -translate-y-1/2 h-[105%]"
+        class="absolute top-[58%] left-[5%] -translate-y-1/2 h-[105%]"
       />
       <div class="w-1/2 px-10 text-center flex flex-col">
         <div class="font-gleglo-bold text-3xl lg:text-4xl mb-3">
@@ -168,7 +164,8 @@
           </span>
         </div>
         <div
-          class="font-gilroy-extrabold text-2xl lg:text-3xl bg-jade-600 rounded-lg text-white py-5 cursor-pointer opacity-100 hover:opacity-80 transition-opacity duration-300 ease-in-out"
+          class="font-gilroy-extrabold text-2xl lg:text-3xl bg-jade-600 rounded-lg text-white p-5 cursor-pointer opacity-100 hover:opacity-80 transition-opacity duration-300 ease-in-out mx-auto"
+          (click)="router.navigate(['/register'])"
         >
           Yes, create my account
         </div>

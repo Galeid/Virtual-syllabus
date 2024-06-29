@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import { ionLibrary } from '@ng-icons/ionicons';
 
@@ -108,6 +109,8 @@ const coursesData: ICourse[] = [
 export class PreviewComponent implements OnInit {
   activeCourse!: ICourse;
   courses: ICourse[] = coursesData;
+
+  constructor(public router: Router) {}
 
   ngOnInit(): void {
     this.activeCourse = this.courses[0];

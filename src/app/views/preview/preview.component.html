@@ -6,7 +6,6 @@
       >
         courses
       </div>
-
       <div
         class="rounded-lg py-6 px-6 font-monserrat text-lg text-zinc-700 bg-white max-h-96 flex flex-col gap-3"
       >
@@ -58,11 +57,11 @@
 <section class="-mt-8 bg-skyblue-300 pb-24 -mb-24">
   <div class="max-w-6xl mx-auto flex flex-col">
     <div
-      class="mt-10 mb-24 w-[900px] h-[500px] mx-auto flex flex-col-reverse md:flex-row-reverse items-center relative"
+      class="mt-10 mb-24 w-full h-[500px] mx-auto flex flex-col-reverse md:flex-row-reverse items-center relative"
     >
       <img
         src="assets/hey-guy.png"
-        class="absolute top-[58%] -left-[5%] -translate-y-1/2 h-[105%]"
+        class="absolute top-[58%] left-[5%] -translate-y-1/2 h-[105%]"
       />
       <div class="w-1/2 px-10 text-center flex flex-col">
         <div class="font-gleglo-bold text-3xl lg:text-4xl mb-3">
@@ -72,7 +71,8 @@
           </span>
         </div>
         <div
-          class="font-gilroy-extrabold text-2xl lg:text-3xl bg-skyblue-600 rounded-lg text-white py-5 cursor-pointer opacity-100 hover:opacity-80 transition-opacity duration-300 ease-in-out"
+          class="font-gilroy-extrabold text-2xl lg:text-3xl bg-skyblue-600 rounded-lg text-white p-5 cursor-pointer opacity-100 hover:opacity-80 transition-opacity duration-300 ease-in-out mx-auto"
+          (click)="router.navigate(['/register'])"
         >
           Yes, create my account
         </div>
